@@ -5,7 +5,7 @@ public class InAirInteractionState : State
     private float _length;
     private IInteractable _interactable;
 
-    public InAirInteractionState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName) : base(checks, animator, player, stateMachine, animationName)
+    public InAirInteractionState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName, PlayerConfig config) : base(checks, animator, player, stateMachine, animationName, config)
     {
     }
 

@@ -6,6 +6,7 @@ public abstract class State
     protected Checks Checks;
     protected Animator Animator;
     protected PlayerStateMachine StateMachine;
+    protected PlayerConfig Config;
     protected int Hash;
     protected float StartTime;
     protected bool IsAnimationFinished;
@@ -15,14 +16,14 @@ public abstract class State
     protected bool JumpInput;
     private bool _isInteract;
 
-    public State(Checks checks, Animator animator,Player player,  PlayerStateMachine stateMachine, string animationName)
+    public State(Checks checks, Animator animator,Player player,  PlayerStateMachine stateMachine, string animationName, PlayerConfig config)
     {
         Player = player;
         Checks = checks;
         Animator = animator;
         StateMachine = stateMachine;
         Hash = Animator.StringToHash(animationName);
-
+        Config = config;
     }
 
     public virtual void Enter()

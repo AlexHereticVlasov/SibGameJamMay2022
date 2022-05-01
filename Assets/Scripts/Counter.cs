@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,16 +11,25 @@ public class Counter : MonoBehaviour
 
     private float _max = 15;
     private bool _isInside;
+    private bool _wasWarped;
 
     public event UnityAction<float> ValueChanged;
 
-    private void OnEnable() => _player.Dead += OnDead;
+    private void OnEnable()
+    {
+        //_player.Dead += OnDead;
+        _player.EnterInSaveZone += OnEnterInSaveZone;
+        _player.ExitFromSaveZone += OnExitFromSaveZone;
+        _player.Warped += OnWarped;
+    }
+
+    
 
     private void Start() => ResetValue();
 
     private void Update()
     {
-        if (_isInside) return;
+        if (_isInside || _wasWarped) return;
 
         if (_value >= 0)
         {
@@ -27,15 +38,38 @@ public class Counter : MonoBehaviour
         }
         else
         {
+            _wasWarped = true;
             Debug.Log("Time is Running out");
             _player.Die();
         }
     }
 
-    private void OnDisable() => _player.Dead -= OnDead;
+    private void OnDisable()
+    {
+        //_player.Dead -= OnDead;
+        _player.EnterInSaveZone -= OnEnterInSaveZone;
+        _player.ExitFromSaveZone -= OnExitFromSaveZone;
+        _player.Warped -= OnWarped;
+    }
 
-    private void OnDead() => ResetValue();
+    //private void OnDead() => ResetValue();
 
+    private void OnWarped()
+    {
+        ResetValue();
+        _wasWarped = false;
+    }
+
+    private void OnExitFromSaveZone()
+    {
+        _isInside = false;
+    }
+
+    private void OnEnterInSaveZone(SaveZone saveZone)
+    {
+        _isInside = true;
+        ResetValue();
+    }
 
     private void ResetValue() => _value = _max;
 
@@ -44,6 +78,7 @@ public class Counter : MonoBehaviour
 
 public class CounterViev : MonoBehaviour
 {
+    [SerializeField] private TMP_Text _text;
     [SerializeField] private Counter _counter;
 
     private void OnEnable()
@@ -58,6 +93,6 @@ public class CounterViev : MonoBehaviour
 
     private void OnValueChanged(float value)
     {
-        //ToDo: Realize Viev Logic;
+        _text.text = value.ToString("0:00:00");
     }
 }

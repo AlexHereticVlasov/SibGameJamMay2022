@@ -2,14 +2,14 @@
 
 public class FallingState : State
 {
-    public FallingState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName) : base(checks, animator, player, stateMachine, animationName)
+    public FallingState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName, PlayerConfig config) : base(checks, animator, player, stateMachine, animationName, config)
     {
     }
 
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        Player.ApplyForce(Physics2D.gravity);
+        Player.ApplyForce(Config.Gravity);
         if (IsOnGround)
         {
             if (XInput > 0.1f)

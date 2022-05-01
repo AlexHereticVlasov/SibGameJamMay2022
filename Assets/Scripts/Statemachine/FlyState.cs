@@ -2,7 +2,7 @@
 
 public abstract class FlyState : State
 {
-    protected FlyState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName) : base(checks, animator, player, stateMachine, animationName)
+    protected FlyState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName, PlayerConfig config) : base(checks, animator, player, stateMachine, animationName, config)
     {
     }
 

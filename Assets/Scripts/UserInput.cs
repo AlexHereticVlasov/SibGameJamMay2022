@@ -5,13 +5,9 @@ using UnityEngine;
 
 public class UserInput : MonoBehaviour
 {
-    [SerializeField] private CharacterController2D _playerMovement;
     [SerializeField] private Checks _checks;
-    [SerializeField] private float _speed;
 
     private float _horizontal;
-    private bool _isJumping;
-    private bool _isCrouching;
 
     private void Update()
     {
@@ -32,15 +28,6 @@ public class UserInput : MonoBehaviour
             _checks.SetIsJumping(false);
         }
 
-        //if (Input.GetKeyDown(KeyCode.S))
-        //{
-        //    _isCrouching = true;
-        //}
-        //else if (Input.GetKeyUp(KeyCode.S))
-        //{
-        //    _isCrouching = false;
-        //}
-
         if (Input.GetKeyDown(KeyCode.F))
         {
             _checks.SetInteract();
@@ -48,17 +35,3 @@ public class UserInput : MonoBehaviour
     }
 }
 
-public class PlayerAnimator : MonoBehaviour
-{
-    [SerializeField] private Animator _animator;
-
-    private void Awake()
-    {
-        CalculateHashes();
-    }
-
-    private void CalculateHashes()
-    {
-        
-    }
-}

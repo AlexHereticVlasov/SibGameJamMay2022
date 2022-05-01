@@ -4,14 +4,18 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private AbstractInventory _inventory;
+    [SerializeField] private PlayerConfig _config;
     [SerializeField] private Checks _checks;
     [SerializeField] private Animator _animator;
     [SerializeField] private Rigidbody2D _rigidbody;
 
+
     private PlayerStateMachine _stateMachine;
 
     public event UnityAction Dead;
+    public event UnityAction<SaveZone> EnterInSaveZone;
+    public event UnityAction ExitFromSaveZone;
+    public event UnityAction Warped;
 
     public IdleState IdleState { get; private set; }
     public MoveState MoveState { get; private set; }
@@ -22,20 +26,19 @@ public class Player : MonoBehaviour
     public OnEarthInteractState OnEarthInteractState { get; private set; }
     public InAirInteractionState InAirInteractionState { get; private set; }
     public WarpState WarpState { get; private set; }
-    //public AbstractInventory Inventory => _inventory;
 
     private void Awake()
     {
         _stateMachine = GetComponent<PlayerStateMachine>();
-        IdleState = new IdleState(_checks, _animator, this, _stateMachine, "Idle");
-        MoveState = new MoveState(_checks, _animator, this, _stateMachine, "Move");
-        LounchState = new LounchState(_checks, _animator, this, _stateMachine, "Lounch");
-        FlyIdleState = new FlyIdleState(_checks, _animator, this, _stateMachine, "FlyIdle");
-        FlyMoveState = new FlyMoveState(_checks, _animator, this, _stateMachine, "FlyMove");
-        FallingState = new FallingState(_checks, _animator, this, _stateMachine, "Falling");
-        OnEarthInteractState = new OnEarthInteractState(_checks, _animator, this, _stateMachine, "EarthInteract");
-        InAirInteractionState = new InAirInteractionState(_checks, _animator, this, _stateMachine, "InAirInteract");
-        WarpState = new WarpState(_checks, _animator, this, _stateMachine, "Warp");
+        IdleState = new IdleState(_checks, _animator, this, _stateMachine, "Idle", _config);
+        MoveState = new MoveState(_checks, _animator, this, _stateMachine, "Move", _config);
+        LounchState = new LounchState(_checks, _animator, this, _stateMachine, "Lounch", _config);
+        FlyIdleState = new FlyIdleState(_checks, _animator, this, _stateMachine, "FlyIdle", _config);
+        FlyMoveState = new FlyMoveState(_checks, _animator, this, _stateMachine, "FlyMove", _config);
+        FallingState = new FallingState(_checks, _animator, this, _stateMachine, "Falling", _config);
+        OnEarthInteractState = new OnEarthInteractState(_checks, _animator, this, _stateMachine, "EarthInteract", _config);
+        InAirInteractionState = new InAirInteractionState(_checks, _animator, this, _stateMachine, "InAirInteract", _config);
+        WarpState = new WarpState(_checks, _animator, this, _stateMachine, "Warp", _config);
 
         _stateMachine.Init(IdleState);
     }
@@ -74,6 +77,17 @@ public class Player : MonoBehaviour
     internal void WarpBack()
     {
         //ToDo:PlayParticles
-        transform.position = Vector2.zero;
+        //transform.position = Vector2.zero;
+        Warped?.Invoke();
+    }
+
+    internal void ExitZone()
+    {
+        ExitFromSaveZone?.Invoke();
+    }
+
+    internal void EnterZone(SaveZone saveZone)
+    {
+        EnterInSaveZone?.Invoke(saveZone);
     }
 }

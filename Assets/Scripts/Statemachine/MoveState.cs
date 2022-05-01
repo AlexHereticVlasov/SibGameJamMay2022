@@ -2,7 +2,7 @@
 
 public class MoveState : OnEarthState
 {
-    public MoveState(Checks checks, Animator animator,Player player, PlayerStateMachine stateMachine, string animationName) : base(checks, animator, player, stateMachine, animationName)
+    public MoveState(Checks checks, Animator animator, Player player, PlayerStateMachine stateMachine, string animationName, PlayerConfig config) : base(checks, animator, player, stateMachine, animationName, config)
     {
     }
 
@@ -11,7 +11,7 @@ public class MoveState : OnEarthState
         base.FixedUpdate();
 
         Checks.CheckIfShoudFlip(XInput);
-        Player.SetVelocityX(2 * XInput); // Movement Speed
+        Player.SetVelocityX(Config.SpeedOnGround * XInput);
 
         if (XInput == 0 && !IsExitingState)
         {
