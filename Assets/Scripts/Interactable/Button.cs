@@ -16,13 +16,14 @@ public class Button : MonoBehaviour, IInteractable
 
     public event UnityAction Interacted;
 
-    public void Interact(AbstractInventory inventory)
+    public void Interact()
     {
         //ToDo: Animate
         if (_nexus != null && _nexus.IsRepeared)
         {
             _wasPreased = true;
             Interacted?.Invoke();
+            Debug.Log("Interact");
         }
     }
 }

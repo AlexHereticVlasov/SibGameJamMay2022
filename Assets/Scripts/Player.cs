@@ -19,7 +19,9 @@ public class Player : MonoBehaviour
     public FlyMoveState FlyMoveState { get; private set; } 
     public LounchState LounchState { get; private set; }
     public FallingState FallingState { get; private set; }
-
+    public OnEarthInteractState OnEarthInteractState { get; private set; }
+    public InAirInteractionState InAirInteractionState { get; private set; }
+    public WarpState WarpState { get; private set; }
     //public AbstractInventory Inventory => _inventory;
 
     private void Awake()
@@ -31,6 +33,9 @@ public class Player : MonoBehaviour
         FlyIdleState = new FlyIdleState(_checks, _animator, this, _stateMachine, "FlyIdle");
         FlyMoveState = new FlyMoveState(_checks, _animator, this, _stateMachine, "FlyMove");
         FallingState = new FallingState(_checks, _animator, this, _stateMachine, "Falling");
+        OnEarthInteractState = new OnEarthInteractState(_checks, _animator, this, _stateMachine, "EarthInteract");
+        InAirInteractionState = new InAirInteractionState(_checks, _animator, this, _stateMachine, "InAirInteract");
+        WarpState = new WarpState(_checks, _animator, this, _stateMachine, "Warp");
 
         _stateMachine.Init(IdleState);
     }
@@ -43,6 +48,7 @@ public class Player : MonoBehaviour
     internal void Die()
     {
         Dead?.Invoke();
+        _stateMachine.Transite(WarpState);
     }
 
     internal void SetVelocityX(float v)
@@ -63,5 +69,11 @@ public class Player : MonoBehaviour
     internal void ApplyForce(Vector2 force)
     {
         _rigidbody.AddForce(force);
+    }
+
+    internal void WarpBack()
+    {
+        //ToDo:PlayParticles
+        transform.position = Vector2.zero;
     }
 }

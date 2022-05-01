@@ -32,19 +32,18 @@ public class UserInput : MonoBehaviour
             _checks.SetIsJumping(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            _isCrouching = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.S))
-        {
-            _isCrouching = false;
-        }
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    _isCrouching = true;
+        //}
+        //else if (Input.GetKeyUp(KeyCode.S))
+        //{
+        //    _isCrouching = false;
+        //}
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("Interact");
-            Debug.Log(_playerMovement.transform.localScale.x);
+            _checks.SetInteract();
         }
     }
 }

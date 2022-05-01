@@ -4,5 +4,5 @@ public interface IInteractable
 {
     public event UnityAction Interacted;
 
-    void Interact(AbstractInventory inventory);
+    void Interact();
 }

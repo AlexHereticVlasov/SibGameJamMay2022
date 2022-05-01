@@ -9,7 +9,7 @@ public class Nexus : MonoBehaviour, IInteractable
 
     public bool IsRepeared => _isRepeared;
 
-    public void Interact(AbstractInventory inventory)
+    public void Interact()
     {
         if (_isRepeared == false)
         {

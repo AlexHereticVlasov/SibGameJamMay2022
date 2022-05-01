@@ -10,7 +10,7 @@ public class EnergyLine : MonoBehaviour, IInteractable
 
     public bool IsRepeared => _isRepeared;
 
-    public void Interact(AbstractInventory inventory)
+    public void Interact()
     {
         Interacted?.Invoke();
     }
