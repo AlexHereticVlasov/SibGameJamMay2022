@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public class EnergyLine : MonoBehaviour, IInteractable
 {
+    //3states
     public event UnityAction Interacted;
 
     private bool _isRepeared;
@@ -13,4 +14,9 @@ public class EnergyLine : MonoBehaviour, IInteractable
     {
         Interacted?.Invoke();
     }
+}
+
+public class Segment : MonoBehaviour
+{ 
+
 }

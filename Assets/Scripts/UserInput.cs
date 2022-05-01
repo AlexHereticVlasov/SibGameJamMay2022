@@ -6,6 +6,7 @@ using UnityEngine;
 public class UserInput : MonoBehaviour
 {
     [SerializeField] private CharacterController2D _playerMovement;
+    [SerializeField] private Checks _checks;
     [SerializeField] private float _speed;
 
     private float _horizontal;
@@ -17,19 +18,20 @@ public class UserInput : MonoBehaviour
         ReadInput();
     }
 
-    private void FixedUpdate()
-    {
-        _playerMovement.Move(_horizontal * _speed * Time.deltaTime, _isCrouching, _isJumping);
-        _isJumping = false;
-    }
-
     private void ReadInput()
     {
-        _horizontal = Input.GetAxis("Horizontal");
+        _horizontal = Input.GetAxisRaw("Horizontal");
+        _checks.SetXInput((int)_horizontal);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            _isJumping = true;
+            _checks.SetIsJumping(true);
         }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            _checks.SetIsJumping(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.S))
         {
             _isCrouching = true;

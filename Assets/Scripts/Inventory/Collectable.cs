@@ -13,7 +13,7 @@ public class Collectable : AbstractInventory, ICollectable
     {
         if (other.TryGetComponent(out Player player))
         {
-            Collect(player.Inventory.Storage);
+            //Collect(player.Inventory.Storage);
             Remove();
         }
     }

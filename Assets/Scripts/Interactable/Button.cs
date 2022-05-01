@@ -5,6 +5,12 @@ using UnityEngine.Events;
 
 public class Button : MonoBehaviour, IInteractable
 {
+    //energy
+    //noenerge
+    //presed
+
+    //2 energy line
+
     [SerializeField] private Nexus _nexus;
     private bool _wasPreased;
 
@@ -37,6 +43,8 @@ public class ActivationCondition
 }
 public class Door : MonoBehaviour
 {
+
+    //1 energy line
     [SerializeField] private ActivationCondition _condition;
     [SerializeField] private bool _isOpen;
 
@@ -52,3 +60,6 @@ public class Door : MonoBehaviour
         }
     }
 }
+
+//enother door
+//3 energy line max
