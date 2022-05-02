@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     public FallingState FallingState { get; private set; }
     public OnEarthInteractState OnEarthInteractState { get; private set; }
     public InAirInteractionState InAirInteractionState { get; private set; }
-    public WarpState WarpState { get; private set; }
+    public WarpInState WarpState { get; private set; }
 
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
         FallingState = new FallingState(_checks, _animator, this, _stateMachine, "Falling", _config);
         OnEarthInteractState = new OnEarthInteractState(_checks, _animator, this, _stateMachine, "EarthInteract", _config);
         InAirInteractionState = new InAirInteractionState(_checks, _animator, this, _stateMachine, "InAirInteract", _config);
-        WarpState = new WarpState(_checks, _animator, this, _stateMachine, "Warp", _config);
+        WarpState = new WarpInState(_checks, _animator, this, _stateMachine, "Warp", _config);
 
         _stateMachine.Init(IdleState);
     }

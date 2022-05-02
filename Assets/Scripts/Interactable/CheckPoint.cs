@@ -59,6 +59,7 @@ public class CheckPoint : BaseActivalible, IInteractable
         if (_needOrigins == _currentOrigins)
         {
             Activate();
+            _next.TryActivate();
         }
         else
         {

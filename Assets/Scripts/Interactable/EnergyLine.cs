@@ -24,6 +24,11 @@ public class EnergyLine : BaseActivalible
             if (IsRepeared())
             {
                 _next.TryActivate();
+
+                foreach (var segment in _segments)
+                {
+                    segment.GivePower();
+                }
             }
         }
     }
