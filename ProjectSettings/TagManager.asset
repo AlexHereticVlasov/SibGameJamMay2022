@@ -41,3 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background1
+    uniqueID: 1269774261
+    locked: 0
+  - name: background2
+    uniqueID: 2691495713
+    locked: 0
+  - name: back_object
+    uniqueID: 748957779
+    locked: 0
+  - name: border
+    uniqueID: 2613065237
+    locked: 0
+  - name: platform
+    uniqueID: 1361870313
+    locked: 0
+  - name: wire
+    uniqueID: 2461732307
+    locked: 0
+  - name: active_object
+    uniqueID: 1175725789
+    locked: 0
+  - name: shadows
+    uniqueID: 4077980809
+    locked: 0
