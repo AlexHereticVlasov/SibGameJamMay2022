@@ -47,6 +47,9 @@ TagManager:
   - name: background2
     uniqueID: 2691495713
     locked: 0
+  - name: shadows
+    uniqueID: 4077980809
+    locked: 0
   - name: back_object
     uniqueID: 748957779
     locked: 0
@@ -61,7 +64,4 @@ TagManager:
     locked: 0
   - name: active_object
     uniqueID: 1175725789
-    locked: 0
-  - name: shadows
-    uniqueID: 4077980809
     locked: 0
