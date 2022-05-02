@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Warp : MonoBehaviour
@@ -11,8 +9,15 @@ public class Warp : MonoBehaviour
     private void OnEnable()
     {
         _player.EnterInSaveZone += OnEnterInSaveZone;
-        _player.ExitFromSaveZone += OnExitFromSaveZone;
+        //_player.ExitFromSaveZone += OnExitFromSaveZone;
         _player.Warped += OnWarped;
+    }
+
+    private void OnDisable()
+    {
+        _player.EnterInSaveZone -= OnEnterInSaveZone;
+        //_player.ExitFromSaveZone -= OnExitFromSaveZone;
+        _player.Warped -= OnWarped;
     }
 
     private void OnWarped()
@@ -20,10 +25,10 @@ public class Warp : MonoBehaviour
         _player.transform.position = _zone.transform.position;
     }
 
-    private void OnExitFromSaveZone()
-    {
-        //throw new System.NotImplementedException();
-    }
+    //private void OnExitFromSaveZone()
+    //{
+    //    //throw new System.NotImplementedException();
+    //}
 
     private void OnEnterInSaveZone(SaveZone saveZone)
     {
