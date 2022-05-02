@@ -1,5 +1,4 @@
 using System;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -71,28 +70,11 @@ public class Counter : MonoBehaviour
         ResetValue();
     }
 
-    private void ResetValue() => _value = _max;
+    private void ResetValue()
+    {
+        _value = _max;
+        ValueChanged?.Invoke(_value);
+    }
 
     private void IncreaseValue(float value) => _value = Mathf.Clamp(_value + value, 0, _max);
-}
-
-public class CounterViev : MonoBehaviour
-{
-    [SerializeField] private TMP_Text _text;
-    [SerializeField] private Counter _counter;
-
-    private void OnEnable()
-    {
-        _counter.ValueChanged += OnValueChanged;
-    }
-
-    private void OnDisable()
-    {
-        _counter.ValueChanged -= OnValueChanged;
-    }
-
-    private void OnValueChanged(float value)
-    {
-        _text.text = value.ToString("0:00:00");
-    }
 }

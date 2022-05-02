@@ -9,6 +9,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private Rigidbody2D _rigidbody;
 
+    //[Header("Particles, Make some class for it")]
+    //[SerializeField] ParticleSystem _closePortal;
+    //[SerializeField] ParticleSystem _openPortal;
+    //private readonly Quaternion _particleRotation = Quaternion.Euler(-90, 0, 0);
+
 
     private PlayerStateMachine _stateMachine;
 
@@ -52,6 +57,9 @@ public class Player : MonoBehaviour
     {
         Dead?.Invoke();
         _stateMachine.Transite(WarpState);
+        //ToDo: Particle Spawn
+        //var openPortal = Instantiate(_openPortal, transform.position, _particleRotation);
+        //Destroy(openPortal.gameObject, 5);
     }
 
     internal void SetVelocityX(float v)
@@ -76,9 +84,12 @@ public class Player : MonoBehaviour
 
     internal void WarpBack()
     {
-        //ToDo:PlayParticles
-        //transform.position = Vector2.zero;
         Warped?.Invoke();
+        //var closePortal = Instantiate(_closePortal, transform.position, _particleRotation);
+        //Destroy(closePortal.gameObject, 5);
+        //transform.position = Vector2.zero;
+
+
     }
 
     internal void ExitZone()

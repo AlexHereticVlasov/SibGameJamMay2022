@@ -1,22 +1,64 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 
-public class EnergyLine : MonoBehaviour, IInteractable
+
+public class EnergyLine : BaseActivalible
 {
-    //3states
-    public event UnityAction Interacted;
+    [SerializeField] private Segment[] _segments;
+    [SerializeField] private BaseActivalible _next;
 
-    private bool _isRepeared;
+    bool _hasPower;
 
-    public bool IsRepeared => _isRepeared;
-
-    public void Interact()
+    private void OnEnable()
     {
-        Interacted?.Invoke();
+        foreach (var segment in _segments)
+        {
+            //Subscribe on repered event;
+            segment.Interacted += OnInteracted;
+        }
+    }
+
+    private void OnInteracted()
+    {
+        if (_hasPower)
+        {
+            if (IsRepeared())
+            {
+                _next.TryActivate();
+            }
+        }
+    }
+
+    public override void Activate()
+    {
+        _next.TryActivate();
+    }
+
+    //3states
+
+    public bool IsRepeared()
+    {
+        foreach (var segment in _segments)
+        {
+            if (segment.State == SegmentState.Broken)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public override bool TryActivate()
+    {
+        _hasPower = true;
+        if (IsRepeared())
+        {
+            Activate();
+            return true;
+        }
+
+        return false;
     }
 }
 
-public class Segment : MonoBehaviour
-{ 
-
-}
+public enum SegmentState { Broken, NoEnergy, HasEnergy}

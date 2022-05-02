@@ -13,7 +13,6 @@ public class WarpState : State
         base.Enter();
         _length = Animator.GetCurrentAnimatorStateInfo(0).length;
         Player.SetVelocity(0, 0);
-
     }
 
     public override void FixedUpdate()
