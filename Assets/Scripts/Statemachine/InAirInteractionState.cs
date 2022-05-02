@@ -18,6 +18,7 @@ public class InAirInteractionState : State
     public override void FixedUpdate()
     {
         base.FixedUpdate();
+        Player.SetVelocity(0, 0);
         _length -= Time.fixedDeltaTime;
         if (_length <= 0)
         {

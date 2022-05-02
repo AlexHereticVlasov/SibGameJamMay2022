@@ -26,12 +26,12 @@ public class Nexus : MonoBehaviour, IInteractable
             //ToDo: Edit Viev
             ActivateTargets();
         }
-        else if (_state == NexusState.TurnedOff)
-        {
-            _state = NexusState.TurnedOn;
-            StateChanged?.Invoke(_state);
-            ActivateTargets();
-        }
+        //else if (_state == NexusState.TurnedOff)
+        //{
+        //    _state = NexusState.TurnedOn;
+        //    StateChanged?.Invoke(_state);
+        //    ActivateTargets();
+        //}
     }
 
     private void ActivateTargets()

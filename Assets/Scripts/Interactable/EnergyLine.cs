@@ -71,4 +71,4 @@ public class EnergyLine : BaseActivalible
     }
 }
 
-public enum SegmentState { Broken, NoEnergy, HasEnergy}
+public enum SegmentState { Broken, NoEnergy, HasEnergy, Repeared, RepearedAndHasEnergy}
