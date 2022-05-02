@@ -31,6 +31,11 @@ public class EnergyLine : BaseActivalible
     public override void Activate()
     {
         _next.TryActivate();
+
+        foreach (var segment in _segments)
+        {
+            segment.GivePower();
+        }
     }
 
     //3states

@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class NexusViev : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Nexus _nexus;
+    [SerializeField] private SpriteRenderer _renderer;
+    [SerializeField] private Color[] _colors;
+
+    private void OnEnable()
     {
-        
+        _nexus.StateChanged += OnStateChanged;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnStateChanged(NexusState arg0)
     {
-        
+        _renderer.color = _colors[(int)arg0];
+    }
+
+    private void OnDisable()
+    {
+        _nexus.StateChanged -= OnStateChanged;
     }
 }

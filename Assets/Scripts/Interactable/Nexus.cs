@@ -9,6 +9,12 @@ public class Nexus : MonoBehaviour, IInteractable
     [SerializeField] private BaseActivalible[] _targets;
 
     public event UnityAction Interacted;
+    public event UnityAction<NexusState> StateChanged;
+
+    private void Start()
+    {
+        StateChanged?.Invoke(_state);
+    }
 
     public void Interact()
     {
@@ -16,12 +22,14 @@ public class Nexus : MonoBehaviour, IInteractable
         {
             Interacted?.Invoke();
             _state = NexusState.TurnedOn;
+            StateChanged?.Invoke(_state);
             //ToDo: Edit Viev
             ActivateTargets();
         }
         else if (_state == NexusState.TurnedOff)
         {
             _state = NexusState.TurnedOn;
+            StateChanged?.Invoke(_state);
             ActivateTargets();
         }
     }

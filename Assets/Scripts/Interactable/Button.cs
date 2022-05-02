@@ -20,6 +20,8 @@ public class Button : BaseActivalible, IInteractable
     [SerializeField] private BaseActivalible _next;
     //2 energy line
 
+    public event UnityAction<ButtonState> StateChanged;
+
     public event UnityAction Interacted;
 
     public override void Activate()
@@ -35,6 +37,7 @@ public class Button : BaseActivalible, IInteractable
             if (_next.TryActivate())
             { 
                 _state = ButtonState.Presed;
+                StateChanged?.Invoke(_state);
             }
         }
     }
@@ -42,6 +45,7 @@ public class Button : BaseActivalible, IInteractable
     public override bool TryActivate()
     {
         _state = ButtonState.HasEnergy;
+        StateChanged?.Invoke(_state);
         return true;
     }
 }
