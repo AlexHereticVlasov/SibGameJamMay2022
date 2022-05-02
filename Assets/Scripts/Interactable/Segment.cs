@@ -21,7 +21,7 @@ public class Segment : MonoBehaviour, IInteractable
     {
         if (_state == SegmentState.Broken)
         {
-            _state = SegmentState.NoEnergy;
+            _state = SegmentState.Repeared;
             StateChanged?.Invoke(_state);
             _collider.enabled = false;
             Interacted?.Invoke();
@@ -30,7 +30,14 @@ public class Segment : MonoBehaviour, IInteractable
 
     internal void GivePower()
     {
-        _state = SegmentState.HasEnergy;
+        if (_state == SegmentState.Repeared)
+        {
+            _state = SegmentState.RepearedAndHasEnergy;
+        }
+        else if (_state == SegmentState.NoEnergy)
+        {
+            _state = SegmentState.HasEnergy;
+        }
         StateChanged?.Invoke(_state);
     }
 }

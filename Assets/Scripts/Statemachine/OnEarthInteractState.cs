@@ -19,6 +19,7 @@ public class OnEarthInteractState : State
     {
         base.FixedUpdate();
         _length -= Time.fixedDeltaTime;
+        Player.SetVelocity(0, 0);
         if (_length <= 0)
         {
             _interactable.Interact();
