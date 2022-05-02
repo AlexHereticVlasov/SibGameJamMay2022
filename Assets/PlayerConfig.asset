@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3150f1793df748348af361f6066770c5, type: 3}
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
-  _speedOnGround: 2
-  _speedInAir: 2.5
-  _risingForce: 2
-  _gravity: {x: 0, y: -1.50414}
+  _speedOnGround: 4.5
+  _speedInAir: 3
+  _risingForce: 0
+  _gravity: {x: 0, y: -2}

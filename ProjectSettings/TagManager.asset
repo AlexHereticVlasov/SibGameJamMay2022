@@ -53,15 +53,21 @@ TagManager:
   - name: back_object
     uniqueID: 748957779
     locked: 0
-  - name: border
-    uniqueID: 2613065237
-    locked: 0
-  - name: platform
-    uniqueID: 1361870313
+  - name: borderUP
+    uniqueID: 4268517797
     locked: 0
   - name: wire
     uniqueID: 2461732307
     locked: 0
   - name: active_object
     uniqueID: 1175725789
+    locked: 0
+  - name: border
+    uniqueID: 2613065237
+    locked: 0
+  - name: platform
+    uniqueID: 1361870313
+    locked: 0
+  - name: player
+    uniqueID: 1830268981
     locked: 0
