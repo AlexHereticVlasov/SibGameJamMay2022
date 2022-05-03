@@ -27,7 +27,7 @@ public class Warp : MonoBehaviour
             return;
         }
 
-        _player.transform.position = _zone.transform.position;
+        _player.transform.position = _zone.transform.position - (Vector3.one * 2);
     }
 
     //private void OnExitFromSaveZone()
