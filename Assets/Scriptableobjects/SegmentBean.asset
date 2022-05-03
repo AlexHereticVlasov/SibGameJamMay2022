@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SegmentBean
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 07864a93b9c294b419bc43adb3a7215e, type: 3}
   - {fileID: 21300000, guid: 3288b1e435627a940839b366f8b863cc, type: 3}
   - {fileID: 21300000, guid: 0fd9e78b4678a664e99c84fcc8dd3f66, type: 3}
   - {fileID: 21300000, guid: 956da6dd2b05ebf4b88e089f8fbf0bee, type: 3}
