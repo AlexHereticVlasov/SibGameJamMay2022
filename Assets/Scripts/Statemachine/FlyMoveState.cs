@@ -11,7 +11,7 @@ public class FlyMoveState : FlyState
     {
         base.FixedUpdate();
         Checks.CheckIfShoudFlip(XInput);
-        Player.SetVelocity(Checks.XInput * Config.SpeedInAir, 2f);//InAir
+        Player.SetVelocity(Checks.XInput * Config.SpeedInAir, Config.RisingForce);//InAir
         if (XInput == 0 && !IsExitingState)
         {
             StateMachine.Transite(Player.FlyIdleState);
