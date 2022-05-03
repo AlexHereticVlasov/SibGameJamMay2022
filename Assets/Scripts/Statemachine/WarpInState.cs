@@ -21,8 +21,8 @@ public class WarpInState : State
         _length -= Time.fixedDeltaTime;
         if (_length <= 0)
         {
-            Player.WarpBack();
             StateMachine.Transite(Player.WarpOutState);
+            Player.WarpBack();
         }
     }
 }

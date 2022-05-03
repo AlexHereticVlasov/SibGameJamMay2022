@@ -335,10 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 59799440}
   _renderer: {fileID: 59799441}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &59799439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -478,10 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 62049781}
   _renderer: {fileID: 62049782}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &62049780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -832,7 +826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &167256911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -953,10 +947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nexus: {fileID: 167256912}
   _renderer: {fileID: 167256913}
-  _colors:
-  - {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
-  - {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
-  - {r: 0.8464725, g: 0.8584906, b: 0.076130256, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &183890995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,12 +1087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 183890999}
   _renderer: {fileID: 183890998}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &191952584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,7 +1376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &231001158
 Transform:
   m_ObjectHideFlags: 0
@@ -1695,7 +1681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &286513505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,10 +2018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 367647269}
   _renderer: {fileID: 367647270}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &367647268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2857,10 +2840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 443491687}
   _renderer: {fileID: 443491690}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &443491690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3305,7 +3285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.49, y: -26.929998, z: -10}
+  m_LocalPosition: {x: 47.390003, y: 4.92, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3928,10 +3908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 596930012}
   _renderer: {fileID: 596930015}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: e792ed9698fd4674f948f3d66d8e7d4e, type: 2}
 --- !u!212 &596930015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4497,10 +4474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 684345517}
   _renderer: {fileID: 684345518}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &684345516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4640,10 +4614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 689089697}
   _renderer: {fileID: 689089698}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &689089696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4929,10 +4900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 732277571}
   _renderer: {fileID: 732277574}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &732277574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5255,12 +5223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 773315737}
   _renderer: {fileID: 773315739}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &794912998
 GameObject:
   m_ObjectHideFlags: 0
@@ -6089,12 +6052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 884016277}
   _renderer: {fileID: 884016279}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &909548942
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,7 +6616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &958883279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6768,10 +6726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 958883279}
   _renderer: {fileID: 958883280}
-  _colors:
-  - {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
-  - {r: 1, g: 0.98071563, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &992238472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6846,10 +6801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 992238473}
   _renderer: {fileID: 992238476}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &992238476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7437,12 +7389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1106150394}
   _renderer: {fileID: 1106150395}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &1109614905
 GameObject:
   m_ObjectHideFlags: 0
@@ -7655,10 +7602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nexus: {fileID: 0}
   _renderer: {fileID: 1135586624}
-  _colors:
-  - {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
-  - {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
-  - {r: 0.8464725, g: 0.8584906, b: 0.076130256, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &1135586622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8149,7 +8093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1209576860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8338,10 +8282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1236868035}
   _renderer: {fileID: 1236868038}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: e792ed9698fd4674f948f3d66d8e7d4e, type: 2}
 --- !u!212 &1236868038
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8422,7 +8363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1267947549
 Transform:
   m_ObjectHideFlags: 0
@@ -8706,10 +8647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1328376171}
   _renderer: {fileID: 1328376172}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &1328376170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9159,10 +9097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1470368650}
   _renderer: {fileID: 1470368651}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &1470368649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9393,12 +9328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1473848948}
   _renderer: {fileID: 1473848950}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &1495244873
 GameObject:
   m_ObjectHideFlags: 0
@@ -9664,7 +9594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1528691883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9785,10 +9715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nexus: {fileID: 1528691883}
   _renderer: {fileID: 1528691884}
-  _colors:
-  - {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
-  - {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
-  - {r: 0.8464725, g: 0.8584906, b: 0.076130256, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &1553093486
 GameObject:
   m_ObjectHideFlags: 0
@@ -10382,7 +10309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1671856872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10502,12 +10429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1671856872}
   _renderer: {fileID: 1671856874}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &1674654330
 GameObject:
   m_ObjectHideFlags: 3
@@ -10903,7 +10825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1755061463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11259,10 +11181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1804729238}
   _renderer: {fileID: 1804729239}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &1804729237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11428,10 +11347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1805481465}
   _renderer: {fileID: 1805481468}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &1805481468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11516,7 +11432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1812724523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11636,12 +11552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1812724523}
   _renderer: {fileID: 1812724525}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &1818877968
 GameObject:
   m_ObjectHideFlags: 0
@@ -11658,7 +11569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1818877969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11930,10 +11841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1849431766}
   _renderer: {fileID: 1849431767}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &1849431765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12044,7 +11952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1852490887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12167,10 +12075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _checkPoint: {fileID: 1852490887}
   _renderer: {fileID: 1852490889}
-  _colors:
-  - {r: 0.16037738, g: 0.1564436, b: 0.1564436, a: 1}
-  - {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  bean: {fileID: 0}
 --- !u!1 &1852664846
 GameObject:
   m_ObjectHideFlags: 0
@@ -12621,12 +12526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1887355642}
   _renderer: {fileID: 1887355644}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
-  - {r: 0, g: 0.841208, b: 0.93333334, a: 1}
-  - {r: 0.93333334, g: 0.4711736, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &1904300112
 GameObject:
   m_ObjectHideFlags: 0
@@ -12858,10 +12758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 1926817008}
   _renderer: {fileID: 1926817011}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &1926817011
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13381,7 +13278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026965472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.49, y: -26.929998, z: -10}
+  m_LocalPosition: {x: 47.390003, y: 4.92, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1674654331}
@@ -13504,10 +13401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 2043960158}
   _renderer: {fileID: 2043960159}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &2043960157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14248,7 +14142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2116901548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14520,10 +14414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 49272313366076104}
   _renderer: {fileID: 49272313366076103}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: e792ed9698fd4674f948f3d66d8e7d4e, type: 2}
 --- !u!212 &49272313366076103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14649,10 +14540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _checkPoint: {fileID: 225994209827538779}
   _renderer: {fileID: 225994209827538781}
-  _colors:
-  - {r: 0.16037738, g: 0.1564436, b: 0.1564436, a: 1}
-  - {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  bean: {fileID: 11400000, guid: 4159d5c3234ffd44397fd48656d49f4e, type: 2}
 --- !u!1 &225994209827538777
 GameObject:
   m_ObjectHideFlags: 0
@@ -14963,12 +14851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2476d20378fdc964d96024113dff3d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nexus: {fileID: 0}
+  _nexus: {fileID: 433889863379870690}
   _renderer: {fileID: 433889863379870693}
-  _colors:
-  - {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
-  - {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
-  - {r: 0.8464725, g: 0.8584906, b: 0.076130256, a: 1}
+  _bean: {fileID: 11400000, guid: 447c9ad14da77774eaf171ae3c913c29, type: 2}
 --- !u!1 &433889863379870689
 GameObject:
   m_ObjectHideFlags: 0
@@ -15001,7 +14886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b944997382b54949985238f707b7d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _state: 0
+  _state: 1
   _targets:
   - {fileID: 49272312110753147}
   - {fileID: 4923858321293319689}
@@ -15124,10 +15009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 527838154104796668}
   _renderer: {fileID: 527838154104796659}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &527838154104796659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15304,10 +15186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 527838155116336450}
   _renderer: {fileID: 527838155116336449}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!212 &527838155116336449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16244,10 +16123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 2412482056699919863}
   _renderer: {fileID: 2412482056699919856}
-  _colors:
-  - {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
-  - {r: 1, g: 0.98071563, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: 98fdfde0a0122c34e9f8b58f0e543653, type: 2}
 --- !u!58 &2412482056699919862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17741,10 +17617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 4405225236041517556}
   _renderer: {fileID: 4405225236041517555}
-  _colors:
-  - {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
-  - {r: 1, g: 0.98071563, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  _bean: {fileID: 0}
 --- !u!1 &4405225236041517559
 GameObject:
   m_ObjectHideFlags: 0
@@ -17870,10 +17743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 4923858322532590010}
   _renderer: {fileID: 4923858322532590005}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: e792ed9698fd4674f948f3d66d8e7d4e, type: 2}
 --- !u!212 &4923858322532590005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19254,10 +19124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 6232347173587199535}
   _renderer: {fileID: 6232347173587199532}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: afa59ca9b24ee9b498f458f03aa21671, type: 2}
 --- !u!61 &6232347173587199534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19870,11 +19737,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323107537164648329, guid: e8fde2e4884256d40970d8cec510ecb2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.1
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 7323107537164648329, guid: e8fde2e4884256d40970d8cec510ecb2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.6
+      value: -1.75
       objectReference: {fileID: 0}
     - target: {fileID: 7323107537164648329, guid: e8fde2e4884256d40970d8cec510ecb2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20063,10 +19930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nexus: {fileID: 0}
   _renderer: {fileID: 7363753213789898250}
-  _colors:
-  - {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
-  - {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
-  - {r: 0.8464725, g: 0.8584906, b: 0.076130256, a: 1}
+  _bean: {fileID: 0}
 --- !u!61 &7629873797532044903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20303,10 +20167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _checkPoint: {fileID: 8472705626259166594}
   _renderer: {fileID: 8472705626259166596}
-  _colors:
-  - {r: 0.16037738, g: 0.1564436, b: 0.1564436, a: 1}
-  - {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  bean: {fileID: 0}
 --- !u!114 &8472705626259166594
 MonoBehaviour:
   m_ObjectHideFlags: 0

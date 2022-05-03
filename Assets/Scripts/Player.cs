@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         OnEarthInteractState = new OnEarthInteractState(_checks, _animator, this, _stateMachine, "EarthInteract", _config);
         InAirInteractionState = new InAirInteractionState(_checks, _animator, this, _stateMachine, "InAirInteract", _config);
         WarpInState = new WarpInState(_checks, _animator, this, _stateMachine, "WarpIn", _config);
-        WarpOutState = new WarpOutState(_checks, _animator, this, _stateMachine, "WarpIn", _config);
+        WarpOutState = new WarpOutState(_checks, _animator, this, _stateMachine, "WarpOut", _config);
 
         _stateMachine.Init(IdleState);
     }
