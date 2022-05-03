@@ -599,6 +599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 697592398}
+  _loader: {fileID: 874774599}
 --- !u!114 &100070142
 MonoBehaviour:
   m_ObjectHideFlags: 0
