@@ -43,21 +43,20 @@ public class Door : BaseActivalible
     {
         _state = DoorState.Closed;
         StateChanged?.Invoke(_state);
-        //_animator.SetTrigger("Open");
+        _animator.SetTrigger("Open");
         float _length = _animator.GetCurrentAnimatorClipInfo(0).Length;
-        yield return new WaitForSeconds(_length); //Anim Length;
+        yield return new WaitForSeconds(_length);
         _boxCollider.enabled = true;
         _state = DoorState.Open;
         StateChanged?.Invoke(_state);
 
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.TryGetComponent(out Player player))
-        {
-            Victory?.Invoke();   
-        }
+        if (collision.TryGetComponent(out Player player))
+            Victory?.Invoke();
     }
 }
 

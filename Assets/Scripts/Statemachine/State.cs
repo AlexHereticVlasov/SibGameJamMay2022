@@ -33,7 +33,7 @@ public abstract class State
         StartTime = Time.time;
         IsAnimationFinished = false;
         IsExitingState = false;
-        Debug.Log(this);
+        //Debug.Log(this);
     }
 
     public virtual void FixedUpdate()
@@ -62,7 +62,7 @@ public abstract class State
     {
         Animator.SetBool(Hash, false);
         IsExitingState = true;
-        Debug.Log($"{this} exit");
+        //Debug.Log($"{this} exit");
     }
 
     public virtual void Check()

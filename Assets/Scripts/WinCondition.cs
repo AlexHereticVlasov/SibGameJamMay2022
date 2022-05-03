@@ -6,6 +6,8 @@ public sealed class WinCondition : MonoBehaviour
     [SerializeField] private SceneLoader _loader;
     [SerializeField] private Counter _counter;
 
+    bool _isWin;
+
     private void OnEnable()
     {
         _door.Victory += OnVictory;
@@ -18,7 +20,10 @@ public sealed class WinCondition : MonoBehaviour
 
     private void OnVictory()
     {
-        _counter.enabled = false;
-        _loader.LoadNextLevel();
+        if (_isWin == false)
+        {
+            _counter.enabled = false;
+            _loader.LoadNextLevel();
+        }
     }
 }
