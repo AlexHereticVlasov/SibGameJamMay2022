@@ -18,7 +18,7 @@ public sealed class SceneLoader : MonoBehaviour
     {
         int index = SceneIndex + 1 <
             SceneManager.sceneCountInBuildSettings ?
-            SceneIndex + 1 : 1;
+            SceneIndex + 1 : 0;
 
         LoadScene(index);
     }

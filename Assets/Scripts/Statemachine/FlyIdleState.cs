@@ -8,7 +8,7 @@ public class FlyIdleState : FlyState
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        Player.SetVelocity(0, 2f);
+        Player.SetVelocity(0, Config.RisingForce);
 
 
         if (XInput != 0 && !IsExitingState)
