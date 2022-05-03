@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedOnGround: 7
   _speedInAir: 5
-  _risingForce: 500
+  _risingForce: 20
   _gravity: {x: 0, y: -2}
