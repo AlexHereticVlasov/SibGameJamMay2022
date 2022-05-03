@@ -17,6 +17,15 @@ public class EnergyLine : BaseActivalible
         }
     }
 
+    private void OnDisable()
+    {
+        foreach (var segment in _segments)
+        {
+            //Subscribe on repered event;
+            segment.Interacted -= OnInteracted;
+        }
+    }
+
     private void OnInteracted()
     {
         if (_hasPower)

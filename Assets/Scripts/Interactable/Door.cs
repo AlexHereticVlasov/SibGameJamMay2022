@@ -44,7 +44,8 @@ public class Door : BaseActivalible
         _state = DoorState.Closed;
         StateChanged?.Invoke(_state);
         //_animator.SetTrigger("Open");
-        yield return new WaitForSeconds(1); //Anim Length;
+        float _length = _animator.GetCurrentAnimatorClipInfo(0).Length;
+        yield return new WaitForSeconds(_length); //Anim Length;
         _boxCollider.enabled = true;
         _state = DoorState.Open;
         StateChanged?.Invoke(_state);
