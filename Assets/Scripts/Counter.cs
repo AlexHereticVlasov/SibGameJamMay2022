@@ -5,10 +5,9 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Player))]
 public class Counter : MonoBehaviour
 {
-    [SerializeField] private float _value;
+    private float _value;
     [SerializeField] private Player _player;
-
-    private float _max = 15;
+    [SerializeField] private float _max = 15;
     private bool _isInside;
     private bool _wasWarped;
 
