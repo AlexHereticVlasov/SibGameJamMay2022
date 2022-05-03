@@ -6,7 +6,7 @@ public class NexusViev : MonoBehaviour
 {
     [SerializeField] private Nexus _nexus;
     [SerializeField] private SpriteRenderer _renderer;
-    [SerializeField] private Color[] _colors;
+    [SerializeField] private SpriteBean _bean;
 
     private void OnEnable()
     {
@@ -15,7 +15,7 @@ public class NexusViev : MonoBehaviour
 
     private void OnStateChanged(NexusState arg0)
     {
-        _renderer.color = _colors[(int)arg0];
+        _renderer.sprite = _bean[(int)arg0];
     }
 
     private void OnDisable()

@@ -4,7 +4,7 @@ public class ButtonViev : MonoBehaviour
 {
     [SerializeField] private Button _button;
     [SerializeField] private SpriteRenderer _renderer;
-    [SerializeField] private Color[] _colors;
+    [SerializeField] private SpriteBean _bean;
 
     private void OnEnable()
     {
@@ -13,7 +13,7 @@ public class ButtonViev : MonoBehaviour
 
     private void OnStateChanged(ButtonState arg0)
     {
-        _renderer.color = _colors[(int)arg0];
+        _renderer.sprite = _bean[(int)arg0];
     }
 
     private void OnDisable()

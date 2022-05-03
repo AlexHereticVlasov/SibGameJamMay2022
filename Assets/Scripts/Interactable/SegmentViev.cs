@@ -4,7 +4,7 @@ public class SegmentViev : MonoBehaviour
 {
     [SerializeField] private Segment _segment;
     [SerializeField] private SpriteRenderer _renderer;
-    [SerializeField] private Color[] _colors;
+    [SerializeField] private SpriteBean _bean;
 
     private void OnEnable()
     {
@@ -13,7 +13,7 @@ public class SegmentViev : MonoBehaviour
 
     private void OnStateChanged(SegmentState arg0)
     {
-        _renderer.color = _colors[(int)arg0];
+        _renderer.sprite = _bean[(int)arg0];
     }
 
     private void OnDisable()

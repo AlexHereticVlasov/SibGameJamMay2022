@@ -4,7 +4,7 @@ public class CheckPointViev : MonoBehaviour
 {
     [SerializeField] private CheckPoint _checkPoint;
     [SerializeField] private SpriteRenderer _renderer;
-    [SerializeField] private Color[] _colors;
+    [SerializeField] private SpriteBean bean;
 
     private void OnEnable()
     {
@@ -13,7 +13,7 @@ public class CheckPointViev : MonoBehaviour
 
     private void OnStateChanged(CheckPointState arg0)
     {
-        _renderer.color = _colors[(int)arg0];
+        _renderer.sprite = bean[(int)arg0];
     }
 
     private void OnDisable()

@@ -217,7 +217,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1175725789
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f7d66f937862afc41858ba49cb5c6aef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -286,7 +286,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _checkPoint: {fileID: 225994210204150368}
   _renderer: {fileID: 225994210204150374}
-  _colors:
-  - {r: 0.16037738, g: 0.1564436, b: 0.1564436, a: 1}
-  - {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  bean: {fileID: 11400000, guid: 4159d5c3234ffd44397fd48656d49f4e, type: 2}

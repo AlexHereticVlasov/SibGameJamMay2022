@@ -139,10 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 3920398411295905490}
   _renderer: {fileID: 5616365299741504577}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: afa59ca9b24ee9b498f458f03aa21671, type: 2}
 --- !u!1 &1268515503696205076
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,10 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 4246151295076881480}
   _renderer: {fileID: 3960039630653381423}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: afa59ca9b24ee9b498f458f03aa21671, type: 2}
 --- !u!1 &1518558333591633390
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,10 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 7648000285437987887}
   _renderer: {fileID: 3540177292007565562}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: afa59ca9b24ee9b498f458f03aa21671, type: 2}
 --- !u!1 &5573752909195106369
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,10 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 5125197311666359612}
   _renderer: {fileID: 5279056796714778262}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: e792ed9698fd4674f948f3d66d8e7d4e, type: 2}
 --- !u!1 &6551258076088432464
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,10 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 6551258076170561628}
   _renderer: {fileID: 6551258076170561631}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: afa59ca9b24ee9b498f458f03aa21671, type: 2}
 --- !u!1 &6551258077054961889
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +892,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _segment: {fileID: 6551258077054961890}
   _renderer: {fileID: 6551258077054961901}
-  _colors:
-  - {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  - {r: 0.6981132, g: 0.6744037, b: 0.6744037, a: 1}
-  - {r: 0.9339623, g: 0.8336478, b: 0, a: 1}
+  _bean: {fileID: 11400000, guid: e792ed9698fd4674f948f3d66d8e7d4e, type: 2}

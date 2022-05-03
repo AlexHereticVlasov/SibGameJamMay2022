@@ -25,12 +25,13 @@ public class Player : MonoBehaviour
     public IdleState IdleState { get; private set; }
     public MoveState MoveState { get; private set; }
     public FlyIdleState FlyIdleState { get; private set; }
-    public FlyMoveState FlyMoveState { get; private set; } 
+    public FlyMoveState FlyMoveState { get; private set; }
     public LounchState LounchState { get; private set; }
     public FallingState FallingState { get; private set; }
     public OnEarthInteractState OnEarthInteractState { get; private set; }
     public InAirInteractionState InAirInteractionState { get; private set; }
-    public WarpInState WarpState { get; private set; }
+    public WarpInState WarpInState { get; private set; }
+    public WarpOutState WarpOutState {get; private set;}
 
     private void Awake()
     {
@@ -43,7 +44,8 @@ public class Player : MonoBehaviour
         FallingState = new FallingState(_checks, _animator, this, _stateMachine, "Falling", _config);
         OnEarthInteractState = new OnEarthInteractState(_checks, _animator, this, _stateMachine, "EarthInteract", _config);
         InAirInteractionState = new InAirInteractionState(_checks, _animator, this, _stateMachine, "InAirInteract", _config);
-        WarpState = new WarpInState(_checks, _animator, this, _stateMachine, "Warp", _config);
+        WarpInState = new WarpInState(_checks, _animator, this, _stateMachine, "WarpIn", _config);
+        WarpOutState = new WarpOutState(_checks, _animator, this, _stateMachine, "WarpIn", _config);
 
         _stateMachine.Init(IdleState);
     }
@@ -56,10 +58,7 @@ public class Player : MonoBehaviour
     internal void Die()
     {
         Dead?.Invoke();
-        _stateMachine.Transite(WarpState);
-        //ToDo: Particle Spawn
-        //var openPortal = Instantiate(_openPortal, transform.position, _particleRotation);
-        //Destroy(openPortal.gameObject, 5);
+        _stateMachine.Transite(WarpInState);
     }
 
     internal void SetVelocityX(float v)
@@ -85,11 +84,6 @@ public class Player : MonoBehaviour
     internal void WarpBack()
     {
         Warped?.Invoke();
-        //var closePortal = Instantiate(_closePortal, transform.position, _particleRotation);
-        //Destroy(closePortal.gameObject, 5);
-        //transform.position = Vector2.zero;
-
-
     }
 
     internal void ExitZone()

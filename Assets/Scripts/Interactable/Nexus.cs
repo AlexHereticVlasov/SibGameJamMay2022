@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public enum NexusState {Broken, TurnedOff, TurnedOn }
+public enum NexusState {Broken, TurnedOn }
 
 public class Nexus : MonoBehaviour, IInteractable
 {
@@ -14,6 +14,10 @@ public class Nexus : MonoBehaviour, IInteractable
     private void Start()
     {
         StateChanged?.Invoke(_state);
+        if (_state == NexusState.TurnedOn)
+        {
+            ActivateTargets();
+        }
     }
 
     public void Interact()
